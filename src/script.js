@@ -1,3 +1,6 @@
+import _ from 'lodash';
+import './style.css';
+
 const weather = {
     apiKey: "df93841f590b928e8628d7e3e8a7d7f5",
     fetchWeather: async function weatherAPI(city) {

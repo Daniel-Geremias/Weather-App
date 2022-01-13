@@ -2,7 +2,7 @@ import _ from 'lodash';
 import './style.css';
 
 const weather = {
-    apiKey: "df93841f590b928e8628d7e3e8a7d7f5",
+    apiKey: process.env.WEATHER_API_KEY,
     fetchWeather: async function weatherAPI(city) {
         await fetch('https://api.openweathermap.org/data/2.5/weather?q='
         + city 
